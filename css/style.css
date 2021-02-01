@@ -83,10 +83,7 @@ body {
 
 .notfound a:hover {
   color: #ff6300;
-  /* background: #211b19; */
-  background: #fff;
-  border: solid;
-  border-color:  #ff6300;
+  background: #211b19;
 }
 
 @media only screen and (max-width: 767px) {
