@@ -1,0 +1,37 @@
+---
+title: Articles
+permalink: /articles/
+layout: page
+excerpt: Arko Mandal is professional Software Developer from Kolkata area.
+comments: false
+---
+
+<!-- <h4 class="posts-item-note">Archives</h4> -->
+{% for post in site.posts %}
+
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+
+    {% if forloop.first %}
+    <h4 class="posts-item-note" id="{{ this_year }}-ref">{{this_year}}</h4>
+    <!-- <ul> -->
+        {% endif %}
+
+        <!-- <li><a href="{{ post.url }}">{{ post.title }}</a></li> -->
+        <article class="post-item">
+            <span class="post-item-date">{{ post.date | date: "%b %d, %Y" }}</span>
+            <h5 class="post-item-title">
+              <a href="{{ post.url }}">{{ post.title | escape }}</a>
+            </h5>
+          </article>
+
+        {% if forloop.last %}
+    <!-- </ul> -->
+    {% else %}
+    {% if this_year != next_year %}
+    <!-- </ul> -->
+    <h4 class="posts-item-note"  id="{{ next_year }}-ref">{{next_year}}</h4>
+    <!-- <ul> -->
+        {% endif %}
+        {% endif %}
+{% endfor %}

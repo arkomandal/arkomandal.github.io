@@ -1,0 +1,45 @@
+<footer class="footer">
+  <!-- <a class="footer_item" href="/thanks">ack.</a> -->
+  <!-- <a class="footer_item" href="/resume">resume</a> -->
+  <!-- <a class="footer_item" href="/feed.xml">rss</a> -->
+  <!-- <a href="https://github.com/arkomandal" target="_blank" rel="noreferrer noopener">
+    <i class="fa fa-github fa-2x"></i>
+  </a> -->
+  <!-- <a style="text-decoration: none;" href="https://twitter.com/ArkoMandal" target="_blank" rel="noreferrer noopener">
+            <i class="fa fa-twitter fa-lg"></i>
+      </a> -->
+
+
+  <!-- <span class="footer_item">&copy; Arko Mandal {{ site.time | date: "%Y" }}</span> -->
+  <small class="footer_theme-copyright">
+    <div>
+      <a style="text-decoration: none;" href="https://twitter.com/ArkoMandal" target="_blank" rel="noreferrer noopener">
+        <i class="fa fa-twitter fa-lg"></i>
+      </a>
+      <a style="padding-left: 0.5em; text-decoration: none;" href="https://linkedin.com/in/arkomandal" target="_blank"
+        rel="noreferrer noopener">
+        <i class="fa fa-linkedin fa-lg"></i>
+      </a>
+
+      <a style="padding-left: 0.5em; text-decoration: none;" href="https://github.com/arkomandal" target="_blank"
+        rel="noreferrer noopener">
+        <i class="fa fa-github fa-lg"></i>
+      </a>
+    </div>
+    <span class="footer_item">&copy; Arko Mandal {{ site.time | date: "2020-%Y" }}</span>
+    <!-- Klisé Theme: https://github.com/piharpi/jekyll-klise -->
+  </small>
+
+</footer>
+<script src="/assets/js/ideas.js" defer="defer"></script>
+<script src="/assets/js/main.js" defer="defer"></script>
+<script src="/assets/js/galite.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+  $(function () {
+    new WOW().init();
+  });
+  var galite = galite || {};
+  galite.UA = "{{ site.google_analytics }}";
+</script>

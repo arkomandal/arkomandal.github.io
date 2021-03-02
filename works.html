@@ -1,0 +1,33 @@
+---
+title: Works
+permalink: /works/
+layout: page
+excerpt: Arko Mandal is professional Software Developer from Kolkata area.
+comments: false
+---
+<!-- <div class="container">
+    <div class="gallery">
+        {% for project in site.data.projects %}
+        <a href="{{ project.url }}" target="_blank" rel="noopener" style="color: inherit;">
+            <div class="gallery-item" tabindex="0">
+                <img src="{{ project.banner }}" class="gallery-image" alt="">
+                <div class="gallery-item-info">
+                    <p>{{ project.title }}</p>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div> -->
+<!-- class="single-content wow zoomIn" attr.data-wow-delay="0.{{i+2}}s" -->
+<div class="grid-container">
+    {% for project in site.data.projects %}
+    <a href="{{ project.url }}" target="_blank" rel="noopener" style="color: inherit;">
+        <div>
+            <img src='{{ project.banner }}' alt=''>
+            <p class="title">"{{ project.title }}"</p>
+            <!-- <p class="description">{{ project.description }}</p> -->
+        </div>
+    </a>
+    {% endfor %}
+</div>
