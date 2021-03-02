@@ -47,4 +47,4 @@ A key must have a type one of: number, date, string, binary, or array. It’s a 
 
 To use **IndexedDB** in Angular projects use [ngx-index-db](https://www.npmjs.com/package/ngx-indexed-db). It is a *service* that wraps **IndexedDB** database in an Angular service. For reference use this [link](https://github.com/arkomandal/Angular-IndexedDB). 
 
-Here goes the [demo](https://arkomandal.github.io/Angular-IndexedDB-View).
+Here goes the [demo](https://arkomandal.github.io/works/Angular-IndexedDB).
