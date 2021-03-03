@@ -3,30 +3,35 @@
         "title": "Castlepoint Shopping",
         "description": "Castlepoint Shopping, Bournemouth, UK",
         "url": "https://castlepointshopping.co.uk",
-        "banner": "/assets/img/projects/castlepoint.png"
+        "banner": "/assets/img/projects/castlepoint.png",
+        "published": true
     },
     {
         "title": "The Policy Mall",
         "description": "The Policy Mall",
         "url": "#",
-        "banner": "/assets/img/projects/the_policy_mall.png"
+        "banner": "/assets/img/projects/the_policy_mall.png",
+        "published": false
     },
     {
         "title": "And Luxe",
         "description": "And Luxe",
         "url": "https://andluxe.com/",
-        "banner": "/assets/img/projects/and_luxe.gif"
+        "banner": "/assets/img/projects/and_luxe.gif",
+        "published": true
     },
     {
         "title": "Tweed Heads",
         "description": "Tweed Heads",
         "url": "http://www.tweed-heads.com.au",
-        "banner": "/assets/img/projects/tweed-heads.png"
+        "banner": "/assets/img/projects/tweed-heads.png",
+        "published": true
     },
     {
         "title": "Knack",
         "description": "Knack",
         "url": "https://justknackit.com",
-        "banner": "/assets/img/projects/knack.jpg"
+        "banner": "/assets/img/projects/knack.jpg",
+        "published": true
     }
 ]

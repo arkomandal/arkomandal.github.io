@@ -22,6 +22,7 @@ comments: false
 <!-- class="single-content wow zoomIn" attr.data-wow-delay="0.{{i+2}}s" -->
 <div class="grid-container">
     {% for project in site.data.projects %}
+    {% if project.published == true %}
     <a href="{{ project.url }}" target="_blank" rel="noopener" style="color: inherit;">
         <div>
             <img src='{{ project.banner }}' alt=''>
@@ -29,5 +30,14 @@ comments: false
             <!-- <p class="description">{{ project.description }}</p> -->
         </div>
     </a>
+    {% elsif project.published == false %}
+    <a style="cursor: pointer; color: inherit;">
+        <div>
+            <img src='{{ project.banner }}' alt=''>
+            <p class="title">"{{ project.title }}"</p>
+            <!-- <p class="description">{{ project.description }}</p> -->
+        </div>
+    </a>
+    {% endif %}
     {% endfor %}
 </div>
